@@ -11,7 +11,7 @@ dotenv.config();
 
 app.use(cors());
 app.use(cors({
-  origin:[""],
+  origin:["https://deploy-mern-frontend-six.vercel.app"],
           methods:["POST","GET"],
           credentials:true
           }));
