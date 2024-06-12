@@ -30,7 +30,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <a href="https://deploy-mern-frontend-six.vercel.app/course">Course</a>
+        <a href="/course">Course</a>
       </li>
 
       <li>
