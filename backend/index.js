@@ -30,8 +30,9 @@ try {
 app.get("/",(req,res)=>{
   res.send("hello")
 });
-app.use("/book", bookRoute);
+
 app.use("/user", userRoute);
+app.use("/book", bookRoute);
 app.listen(PORT, () => {
   console.log("example app");
 });
