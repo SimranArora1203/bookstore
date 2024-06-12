@@ -9,6 +9,7 @@ import axios from "axios";
 const Freebook = () => {
   //   const filterData = list.filter((data) => data.category === "Free");
   const [book, setBook] = useState([]);
+  axios.defaults.withCredentials=true;
   useEffect(() => {
     const getData = async () => {
       try {
