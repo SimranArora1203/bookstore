@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-    "dev":"nodemon index.js"
+    "start": "nodemon index.js",
+    "dev":"nodemon index.js",
+     "build": "echo 'Running main build process...'",
+    "vercel-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "simran",
   "license": "ISC",
