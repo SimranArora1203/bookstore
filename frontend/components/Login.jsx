@@ -14,6 +14,7 @@ const Login = () => {
       email: data.email,
       password: data.password,
     };
+    axios.defaults.withCredentials=true;
     await axios
       .post("https://deploy-mern-api-ochre.vercel.app/login", userInfo)
       .then((res) => {
