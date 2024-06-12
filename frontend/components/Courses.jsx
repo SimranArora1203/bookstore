@@ -9,7 +9,7 @@ const Courses = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://deploy-mern-api-ochre.vercel.app//book");
+        const res = await axios.get("https://deploy-mern-api-ochre.vercel.app/book");
         console.log("res", res);
         setBook(res.data);
       } catch (error) {
