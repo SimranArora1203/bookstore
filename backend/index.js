@@ -20,7 +20,7 @@ app.use(express.json());
 // const PORT = process.env.PORT || 4000;
 const PORT=4000;
 // const URI = process.env.MONGODBURI;
-const URI="mongodb+srv://25629simran2020:vivek1234@cluster0.fgtcxux.mongodb.net/";
+const URI="mongodb+srv://25629simran2020:vivek1234@cluster0.fgtcxux.mongodb.net/bookStore";
 try {
   mongoose.connect(URI);
 
