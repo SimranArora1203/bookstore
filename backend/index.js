@@ -16,9 +16,10 @@ app.use(cors({
           credentials:true
           }));
 app.use(express.json());
-const PORT = process.env.PORT || 4000;
+// const PORT = process.env.PORT || 4000;
+const PORT=4000;
 // const URI = process.env.MONGODBURI;
-const URI="mongodb://localhost:27017/bookStore"
+const URI="mongodb://localhost:27017/bookStore";
 try {
   mongoose.connect(URI);
 
