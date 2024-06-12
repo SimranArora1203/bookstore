@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 import userRoute from "./route/user.route.js";
 import bookRoute from "./route/book.route.js";
 import path from "path";
+
 const app = express();
 dotenv.config();
 
@@ -28,6 +29,7 @@ try {
 } catch (error) {
   console.log(error);
 }
+NODE_ENV="production";
 app.get("/",(req,res)=>{
   res.send("hello")
 });
