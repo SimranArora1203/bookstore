@@ -29,7 +29,7 @@ try {
 } catch (error) {
   console.log(error);
 }
-NODE_ENV="production";
+
 app.get("/",(req,res)=>{
   res.send("hello")
 });
