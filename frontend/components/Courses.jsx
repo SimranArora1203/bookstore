@@ -6,6 +6,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 const Courses = () => {
   const [book, setBook] = useState([]);
+  axios.defaults.withCredentials=true;
   useEffect(() => {
     const getBook = async () => {
       try {
